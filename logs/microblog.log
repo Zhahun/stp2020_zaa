@@ -1,0 +1,91 @@
+2021-01-09 17:24:50,830 INFO: Microblog startup [in E:\Study\STP\stp2020_zaa\app\__init__.py:43]
+2021-01-09 17:24:57,841 ERROR: Exception on /user/2 [GET] [in e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "E:\Study\STP\stp2020_zaa\app\routes.py", line 81, in user
+    return render_template('user.html', user=user, posts=posts)
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "E:\Study\STP\stp2020_zaa\app\templates\user.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "E:\Study\STP\stp2020_zaa\app\templates\base.html", line 30, in top-level template code
+    {% block content %}{% endblock %}
+  File "E:\Study\STP\stp2020_zaa\app\templates\user.html", line 12, in block "content"
+    <p><a href="{{ url_for('edit_profile') }}">Edit your profile</a></p>
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\helpers.py", line 370, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py", line 2216, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\helpers.py", line 357, in url_for
+    rv = url_adapter.build(
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\werkzeug\routing.py", line 2179, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'edit_profile'. Did you mean 'user' instead?
+2021-01-09 17:25:50,330 ERROR: Exception on /user/2 [GET] [in e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "E:\Study\STP\stp2020_zaa\app\routes.py", line 81, in user
+    return render_template('user.html', user=user, posts=posts)
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "E:\Study\STP\stp2020_zaa\app\templates\user.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "E:\Study\STP\stp2020_zaa\app\templates\base.html", line 30, in top-level template code
+    {% block content %}{% endblock %}
+  File "E:\Study\STP\stp2020_zaa\app\templates\user.html", line 12, in block "content"
+    <p><a href="{{ url_for('edit_profile') }}">Edit your profile</a></p>
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\helpers.py", line 370, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py", line 2216, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\helpers.py", line 357, in url_for
+    rv = url_adapter.build(
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\werkzeug\routing.py", line 2179, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'edit_profile'. Did you mean 'user' instead?
