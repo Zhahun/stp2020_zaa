@@ -19,3 +19,4 @@ Traceback (most recent call last):
   File "E:\Study\STP\stp2020_zaa\app\models.py", line 65, in get_reset_password_token
     return jwt.encode(
 AttributeError: 'str' object has no attribute 'decode'
+2021-01-09 21:07:48,875 INFO: Microblog startup [in E:\Study\STP\stp2020_zaa\app\__init__.py:50]
