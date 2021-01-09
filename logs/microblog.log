@@ -89,3 +89,13 @@ Traceback (most recent call last):
   File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\werkzeug\routing.py", line 2179, in build
     raise BuildError(endpoint, values, method, self)
 werkzeug.routing.BuildError: Could not build url for endpoint 'edit_profile'. Did you mean 'user' instead?
+2021-01-09 17:37:18,619 INFO: Microblog startup [in E:\Study\STP\stp2020_zaa\app\__init__.py:43]
+2021-01-09 17:39:56,964 INFO: Microblog startup [in E:\Study\STP\stp2020_zaa\app\__init__.py:43]
+2021-01-09 17:40:31,086 INFO: Microblog startup [in E:\Study\STP\stp2020_zaa\app\__init__.py:43]
+2021-01-09 17:43:43,164 INFO: Microblog startup [in E:\Study\STP\stp2020_zaa\app\__init__.py:43]
+2021-01-09 17:46:42,260 INFO: Microblog startup [in E:\Study\STP\stp2020_zaa\app\__init__.py:43]
+2021-01-09 17:58:25,788 INFO: Microblog startup [in E:\Study\STP\stp2020_zaa\app\__init__.py:43]
+2021-01-09 18:00:39,030 INFO: Microblog startup [in E:\Study\STP\stp2020_zaa\app\__init__.py:43]
+2021-01-09 18:00:44,718 INFO: Microblog startup [in E:\Study\STP\stp2020_zaa\app\__init__.py:43]
+2021-01-09 18:06:23,541 INFO: Microblog startup [in E:\Study\STP\stp2020_zaa\app\__init__.py:43]
+2021-01-09 18:11:00,620 INFO: Microblog startup [in E:\Study\STP\stp2020_zaa\app\__init__.py:43]
