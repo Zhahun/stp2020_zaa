@@ -1,4 +1,4 @@
-2021-01-09 20:02:33,169 ERROR: Exception on /reset_password_request [POST] [in e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py:1891]
+2021-01-09 20:14:32,075 ERROR: Exception on /reset_password_request [POST] [in e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py:1891]
 Traceback (most recent call last):
   File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py", line 2447, in wsgi_app
     response = self.full_dispatch_request()
@@ -12,14 +12,14 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py", line 1936, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "E:\Study\STP\stp2020_zaa\app\routes.py", line 103, in reset_password_request
+  File "E:\Study\STP\stp2020_zaa\app\routes.py", line 102, in reset_password_request
     send_password_reset_email(user)
   File "E:\Study\STP\stp2020_zaa\app\email.py", line 20, in send_password_reset_email
     token = user.get_reset_password_token()
   File "E:\Study\STP\stp2020_zaa\app\models.py", line 65, in get_reset_password_token
     return jwt.encode(
 AttributeError: 'str' object has no attribute 'decode'
-2021-01-09 20:05:52,946 ERROR: Exception on /reset_password_request [POST] [in e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py:1891]
+2021-01-09 20:14:39,824 ERROR: Exception on /reset_password_request [POST] [in e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py:1891]
 Traceback (most recent call last):
   File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py", line 2447, in wsgi_app
     response = self.full_dispatch_request()
@@ -33,14 +33,17 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py", line 1936, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "E:\Study\STP\stp2020_zaa\app\routes.py", line 103, in reset_password_request
+  File "E:\Study\STP\stp2020_zaa\app\routes.py", line 102, in reset_password_request
     send_password_reset_email(user)
   File "E:\Study\STP\stp2020_zaa\app\email.py", line 20, in send_password_reset_email
     token = user.get_reset_password_token()
   File "E:\Study\STP\stp2020_zaa\app\models.py", line 65, in get_reset_password_token
     return jwt.encode(
 AttributeError: 'str' object has no attribute 'decode'
-2021-01-09 20:06:08,320 ERROR: Exception on /reset_password_request [POST] [in e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py:1891]
+2021-01-09 20:19:35,711 INFO: Microblog startup [in E:\Study\STP\stp2020_zaa\app\__init__.py:45]
+2021-01-09 20:39:02,561 INFO: Microblog startup [in E:\Study\STP\stp2020_zaa\app\__init__.py:45]
+2021-01-09 20:39:11,683 INFO: Microblog startup [in E:\Study\STP\stp2020_zaa\app\__init__.py:45]
+2021-01-09 20:39:35,103 ERROR: Exception on /reset_password_request [POST] [in e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py:1891]
 Traceback (most recent call last):
   File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py", line 2447, in wsgi_app
     response = self.full_dispatch_request()
@@ -54,15 +57,14 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py", line 1936, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "E:\Study\STP\stp2020_zaa\app\routes.py", line 103, in reset_password_request
+  File "E:\Study\STP\stp2020_zaa\app\routes.py", line 102, in reset_password_request
     send_password_reset_email(user)
   File "E:\Study\STP\stp2020_zaa\app\email.py", line 20, in send_password_reset_email
     token = user.get_reset_password_token()
   File "E:\Study\STP\stp2020_zaa\app\models.py", line 65, in get_reset_password_token
     return jwt.encode(
 AttributeError: 'str' object has no attribute 'decode'
-2021-01-09 20:08:02,460 INFO: Microblog startup [in E:\Study\STP\stp2020_zaa\app\__init__.py:45]
-2021-01-09 20:08:21,508 ERROR: Exception on /reset_password_request [POST] [in e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py:1891]
+2021-01-09 20:40:01,501 ERROR: Exception on /reset_password_request [POST] [in e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py:1891]
 Traceback (most recent call last):
   File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py", line 2447, in wsgi_app
     response = self.full_dispatch_request()
@@ -76,14 +78,14 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py", line 1936, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "E:\Study\STP\stp2020_zaa\app\routes.py", line 103, in reset_password_request
+  File "E:\Study\STP\stp2020_zaa\app\routes.py", line 102, in reset_password_request
     send_password_reset_email(user)
   File "E:\Study\STP\stp2020_zaa\app\email.py", line 20, in send_password_reset_email
     token = user.get_reset_password_token()
   File "E:\Study\STP\stp2020_zaa\app\models.py", line 65, in get_reset_password_token
     return jwt.encode(
 AttributeError: 'str' object has no attribute 'decode'
-2021-01-09 20:08:54,557 ERROR: Exception on /reset_password_request [POST] [in e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py:1891]
+2021-01-09 20:40:12,188 ERROR: Exception on /reset_password_request [POST] [in e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py:1891]
 Traceback (most recent call last):
   File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py", line 2447, in wsgi_app
     response = self.full_dispatch_request()
@@ -97,14 +99,15 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py", line 1936, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "E:\Study\STP\stp2020_zaa\app\routes.py", line 103, in reset_password_request
+  File "E:\Study\STP\stp2020_zaa\app\routes.py", line 102, in reset_password_request
     send_password_reset_email(user)
   File "E:\Study\STP\stp2020_zaa\app\email.py", line 20, in send_password_reset_email
     token = user.get_reset_password_token()
   File "E:\Study\STP\stp2020_zaa\app\models.py", line 65, in get_reset_password_token
     return jwt.encode(
 AttributeError: 'str' object has no attribute 'decode'
-2021-01-09 20:10:06,906 ERROR: Exception on /reset_password_request [POST] [in e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py:1891]
+2021-01-09 20:48:23,076 INFO: Microblog startup [in E:\Study\STP\stp2020_zaa\app\__init__.py:44]
+2021-01-09 20:48:54,196 ERROR: Exception on /reset_password_request [POST] [in e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py:1891]
 Traceback (most recent call last):
   File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py", line 2447, in wsgi_app
     response = self.full_dispatch_request()
@@ -118,12 +121,11 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py", line 1936, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "E:\Study\STP\stp2020_zaa\app\routes.py", line 103, in reset_password_request
+  File "E:\Study\STP\stp2020_zaa\app\routes.py", line 99, in reset_password_request
     send_password_reset_email(user)
   File "E:\Study\STP\stp2020_zaa\app\email.py", line 20, in send_password_reset_email
     token = user.get_reset_password_token()
-  File "E:\Study\STP\stp2020_zaa\app\models.py", line 65, in get_reset_password_token
+  File "E:\Study\STP\stp2020_zaa\app\models.py", line 64, in get_reset_password_token
     return jwt.encode(
 AttributeError: 'str' object has no attribute 'decode'
-2021-01-09 20:14:11,281 INFO: Microblog startup [in E:\Study\STP\stp2020_zaa\app\__init__.py:45]
-2021-01-09 20:14:19,336 INFO: Microblog startup [in E:\Study\STP\stp2020_zaa\app\__init__.py:45]
+2021-01-09 20:52:26,577 INFO: Microblog startup [in E:\Study\STP\stp2020_zaa\app\__init__.py:47]

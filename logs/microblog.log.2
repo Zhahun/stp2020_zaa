@@ -1,115 +1,4 @@
-2021-01-09 17:24:50,830 INFO: Microblog startup [in E:\Study\STP\stp2020_zaa\app\__init__.py:43]
-2021-01-09 17:24:57,841 ERROR: Exception on /user/2 [GET] [in e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py:1891]
-Traceback (most recent call last):
-  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py", line 2447, in wsgi_app
-    response = self.full_dispatch_request()
-  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\_compat.py", line 39, in reraise
-    raise value
-  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
-    return func(*args, **kwargs)
-  File "E:\Study\STP\stp2020_zaa\app\routes.py", line 81, in user
-    return render_template('user.html', user=user, posts=posts)
-  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\templating.py", line 137, in render_template
-    return _render(
-  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\templating.py", line 120, in _render
-    rv = template.render(context)
-  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\jinja2\environment.py", line 1090, in render
-    self.environment.handle_exception()
-  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
-    reraise(*rewrite_traceback_stack(source=source))
-  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\jinja2\_compat.py", line 28, in reraise
-    raise value.with_traceback(tb)
-  File "E:\Study\STP\stp2020_zaa\app\templates\user.html", line 1, in top-level template code
-    {% extends "base.html" %}
-  File "E:\Study\STP\stp2020_zaa\app\templates\base.html", line 30, in top-level template code
-    {% block content %}{% endblock %}
-  File "E:\Study\STP\stp2020_zaa\app\templates\user.html", line 12, in block "content"
-    <p><a href="{{ url_for('edit_profile') }}">Edit your profile</a></p>
-  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\helpers.py", line 370, in url_for
-    return appctx.app.handle_url_build_error(error, endpoint, values)
-  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py", line 2216, in handle_url_build_error
-    reraise(exc_type, exc_value, tb)
-  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\_compat.py", line 39, in reraise
-    raise value
-  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\helpers.py", line 357, in url_for
-    rv = url_adapter.build(
-  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\werkzeug\routing.py", line 2179, in build
-    raise BuildError(endpoint, values, method, self)
-werkzeug.routing.BuildError: Could not build url for endpoint 'edit_profile'. Did you mean 'user' instead?
-2021-01-09 17:25:50,330 ERROR: Exception on /user/2 [GET] [in e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py:1891]
-Traceback (most recent call last):
-  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py", line 2447, in wsgi_app
-    response = self.full_dispatch_request()
-  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\_compat.py", line 39, in reraise
-    raise value
-  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
-    return func(*args, **kwargs)
-  File "E:\Study\STP\stp2020_zaa\app\routes.py", line 81, in user
-    return render_template('user.html', user=user, posts=posts)
-  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\templating.py", line 137, in render_template
-    return _render(
-  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\templating.py", line 120, in _render
-    rv = template.render(context)
-  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\jinja2\environment.py", line 1090, in render
-    self.environment.handle_exception()
-  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
-    reraise(*rewrite_traceback_stack(source=source))
-  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\jinja2\_compat.py", line 28, in reraise
-    raise value.with_traceback(tb)
-  File "E:\Study\STP\stp2020_zaa\app\templates\user.html", line 1, in top-level template code
-    {% extends "base.html" %}
-  File "E:\Study\STP\stp2020_zaa\app\templates\base.html", line 30, in top-level template code
-    {% block content %}{% endblock %}
-  File "E:\Study\STP\stp2020_zaa\app\templates\user.html", line 12, in block "content"
-    <p><a href="{{ url_for('edit_profile') }}">Edit your profile</a></p>
-  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\helpers.py", line 370, in url_for
-    return appctx.app.handle_url_build_error(error, endpoint, values)
-  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py", line 2216, in handle_url_build_error
-    reraise(exc_type, exc_value, tb)
-  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\_compat.py", line 39, in reraise
-    raise value
-  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\helpers.py", line 357, in url_for
-    rv = url_adapter.build(
-  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\werkzeug\routing.py", line 2179, in build
-    raise BuildError(endpoint, values, method, self)
-werkzeug.routing.BuildError: Could not build url for endpoint 'edit_profile'. Did you mean 'user' instead?
-2021-01-09 17:37:18,619 INFO: Microblog startup [in E:\Study\STP\stp2020_zaa\app\__init__.py:43]
-2021-01-09 17:39:56,964 INFO: Microblog startup [in E:\Study\STP\stp2020_zaa\app\__init__.py:43]
-2021-01-09 17:40:31,086 INFO: Microblog startup [in E:\Study\STP\stp2020_zaa\app\__init__.py:43]
-2021-01-09 17:43:43,164 INFO: Microblog startup [in E:\Study\STP\stp2020_zaa\app\__init__.py:43]
-2021-01-09 17:46:42,260 INFO: Microblog startup [in E:\Study\STP\stp2020_zaa\app\__init__.py:43]
-2021-01-09 17:58:25,788 INFO: Microblog startup [in E:\Study\STP\stp2020_zaa\app\__init__.py:43]
-2021-01-09 18:00:39,030 INFO: Microblog startup [in E:\Study\STP\stp2020_zaa\app\__init__.py:43]
-2021-01-09 18:00:44,718 INFO: Microblog startup [in E:\Study\STP\stp2020_zaa\app\__init__.py:43]
-2021-01-09 18:06:23,541 INFO: Microblog startup [in E:\Study\STP\stp2020_zaa\app\__init__.py:43]
-2021-01-09 18:11:00,620 INFO: Microblog startup [in E:\Study\STP\stp2020_zaa\app\__init__.py:43]
-2021-01-09 18:19:19,286 INFO: Microblog startup [in E:\Study\STP\stp2020_zaa\app\__init__.py:43]
-2021-01-09 18:36:44,845 INFO: Microblog startup [in E:\Study\STP\stp2020_zaa\app\__init__.py:43]
-2021-01-09 18:45:32,332 INFO: Microblog startup [in E:\Study\STP\stp2020_zaa\app\__init__.py:43]
-2021-01-09 18:47:34,667 INFO: Microblog startup [in E:\Study\STP\stp2020_zaa\app\__init__.py:43]
-2021-01-09 18:48:36,781 INFO: Microblog startup [in E:\Study\STP\stp2020_zaa\app\__init__.py:43]
-2021-01-09 19:06:11,426 INFO: Microblog startup [in E:\Study\STP\stp2020_zaa\app\__init__.py:43]
-2021-01-09 19:21:14,220 INFO: Microblog startup [in E:\Study\STP\stp2020_zaa\app\__init__.py:43]
-2021-01-09 19:23:59,881 INFO: Microblog startup [in E:\Study\STP\stp2020_zaa\app\__init__.py:43]
-2021-01-09 19:26:04,029 INFO: Microblog startup [in E:\Study\STP\stp2020_zaa\app\__init__.py:43]
-2021-01-09 19:58:54,397 INFO: Microblog startup [in E:\Study\STP\stp2020_zaa\app\__init__.py:45]
-2021-01-09 20:00:04,171 ERROR: Exception on /reset_password_request [POST] [in e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py:1891]
+2021-01-09 20:02:33,169 ERROR: Exception on /reset_password_request [POST] [in e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py:1891]
 Traceback (most recent call last):
   File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py", line 2447, in wsgi_app
     response = self.full_dispatch_request()
@@ -130,4 +19,111 @@ Traceback (most recent call last):
   File "E:\Study\STP\stp2020_zaa\app\models.py", line 65, in get_reset_password_token
     return jwt.encode(
 AttributeError: 'str' object has no attribute 'decode'
-2021-01-09 20:02:20,684 INFO: Microblog startup [in E:\Study\STP\stp2020_zaa\app\__init__.py:45]
+2021-01-09 20:05:52,946 ERROR: Exception on /reset_password_request [POST] [in e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\Study\STP\stp2020_zaa\app\routes.py", line 103, in reset_password_request
+    send_password_reset_email(user)
+  File "E:\Study\STP\stp2020_zaa\app\email.py", line 20, in send_password_reset_email
+    token = user.get_reset_password_token()
+  File "E:\Study\STP\stp2020_zaa\app\models.py", line 65, in get_reset_password_token
+    return jwt.encode(
+AttributeError: 'str' object has no attribute 'decode'
+2021-01-09 20:06:08,320 ERROR: Exception on /reset_password_request [POST] [in e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\Study\STP\stp2020_zaa\app\routes.py", line 103, in reset_password_request
+    send_password_reset_email(user)
+  File "E:\Study\STP\stp2020_zaa\app\email.py", line 20, in send_password_reset_email
+    token = user.get_reset_password_token()
+  File "E:\Study\STP\stp2020_zaa\app\models.py", line 65, in get_reset_password_token
+    return jwt.encode(
+AttributeError: 'str' object has no attribute 'decode'
+2021-01-09 20:08:02,460 INFO: Microblog startup [in E:\Study\STP\stp2020_zaa\app\__init__.py:45]
+2021-01-09 20:08:21,508 ERROR: Exception on /reset_password_request [POST] [in e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\Study\STP\stp2020_zaa\app\routes.py", line 103, in reset_password_request
+    send_password_reset_email(user)
+  File "E:\Study\STP\stp2020_zaa\app\email.py", line 20, in send_password_reset_email
+    token = user.get_reset_password_token()
+  File "E:\Study\STP\stp2020_zaa\app\models.py", line 65, in get_reset_password_token
+    return jwt.encode(
+AttributeError: 'str' object has no attribute 'decode'
+2021-01-09 20:08:54,557 ERROR: Exception on /reset_password_request [POST] [in e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\Study\STP\stp2020_zaa\app\routes.py", line 103, in reset_password_request
+    send_password_reset_email(user)
+  File "E:\Study\STP\stp2020_zaa\app\email.py", line 20, in send_password_reset_email
+    token = user.get_reset_password_token()
+  File "E:\Study\STP\stp2020_zaa\app\models.py", line 65, in get_reset_password_token
+    return jwt.encode(
+AttributeError: 'str' object has no attribute 'decode'
+2021-01-09 20:10:06,906 ERROR: Exception on /reset_password_request [POST] [in e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "e:\study\stp\stp2020_zaa\stp2020\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\Study\STP\stp2020_zaa\app\routes.py", line 103, in reset_password_request
+    send_password_reset_email(user)
+  File "E:\Study\STP\stp2020_zaa\app\email.py", line 20, in send_password_reset_email
+    token = user.get_reset_password_token()
+  File "E:\Study\STP\stp2020_zaa\app\models.py", line 65, in get_reset_password_token
+    return jwt.encode(
+AttributeError: 'str' object has no attribute 'decode'
+2021-01-09 20:14:11,281 INFO: Microblog startup [in E:\Study\STP\stp2020_zaa\app\__init__.py:45]
+2021-01-09 20:14:19,336 INFO: Microblog startup [in E:\Study\STP\stp2020_zaa\app\__init__.py:45]
